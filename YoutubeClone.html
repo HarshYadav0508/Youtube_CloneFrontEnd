@@ -13,10 +13,11 @@
 </head>
 
 <body>
-    <div class="header">
+    <!-- Header Section Used Fixed Position Property. Flex Display property -->
+    <header class="header">
         <div class="left-section">
-            <div><img class="hamburger-menu" src="Icons/hamburger-menu.svg"></div>
-            <div><img class="youtube-logo" src="Icons/YouTube_Logo_2017.svg"></div>
+            <div class="hamburger-menu-div"><img class="hamburger-menu" src="Icons/hamburger-menu.svg"></div>
+            <div class="youtube-logo-div"><img class="youtube-logo" src="Icons/YouTube_Logo_2017.svg"></div>
         </div>
         <div class="middle-section">
             <input class="search-bar" type="text" placeholder="Search">
@@ -32,7 +33,6 @@
                     <div class="tooltip">Search with your Voice</div>
                 </button>
             </div>
-        
         </div>
         <div class="right-section">
             <div class="create-button">
@@ -47,8 +47,9 @@
             <div><img class="main-author" src="Thumbnail/Author/main-author.jpg"></div>
             
         </div>      
-    </div>
-    <div class="side-bar">
+    </header>
+    <!-- nav Section is using a FlexBox Design -->
+    <nav class="side-bar">
         <div class="sidebar-link">
             <img class="home-sidebar" src="Icons/home-sidebar.svg">
             <div>Home</div>
@@ -73,164 +74,168 @@
             <img class="library-sidebar" src="Icons/library-sidebar.svg">
             <div>Library</div>
         </div>
-    </div>
-    <div class="video-grid">
-        <div class="video-preview">
-            <div class="upper-section">
-                <div class="thumbnail-section">
-                    <img class="thumbnail" src="Thumbnail/VideoPreview/preview-1.webp">
-                    <div class="video-time">
-                        1:00
+    </nav>
+    <main>
+        <!--This is using a Display: Grid Property. -->
+       <section class="video-grid">
+            <div class="video-preview">
+                <div class="upper-section">
+                    <div class="thumbnail-section">
+                        <img class="thumbnail" src="Thumbnail/VideoPreview/preview-1.webp">
+                        <!-- Video Time used absolute Position inside the relative position of the thumbnail section -->
+                        <div class="video-time">
+                            1:00
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-section">
+                    <div class="author-preview">
+                        <img class="author-thumbnail" src="Thumbnail/Author/author-1.jpg">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">
+                            Sacred Meditation | 1 hour handpan music | Malte Marten
+                        </div>
+                        <div class="video-author">
+                            Malte Marten
+                        </div>
+                        <div class="video-stats">
+                            225k views &#183; 6 months ago
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="lower-section">
-                <div class="author-preview">
-                    <img class="author-thumbnail" src="Thumbnail/Author/author-1.jpg">
-                </div>
-                <div class="video-details">
-                    <div class="video-title">
-                        Sacred Meditation | 1 hour handpan music | Malte Marten
-                    </div>
-                    <div class="video-author">
-                        Malte Marten
-                    </div>
-                    <div class="video-stats">
-                        225k views &#183; 6 months ago
+            <div class="video-preview">
+                <div class="upper-section">
+                    <div class="thumbnail-section">
+                        <img class="thumbnail" src="Thumbnail/VideoPreview/preview-2.webp">
+                        <div class="video-time">
+                            1:00
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="upper-section">
-                <div class="thumbnail-section">
-                    <img class="thumbnail" src="Thumbnail/VideoPreview/preview-2.webp">
-                    <div class="video-time">
-                        1:00
+                <div class="lower-section">
+                    <div class="author-preview">
+                        <img class="author-thumbnail" src="Thumbnail/Author/author-2.jpg">
                     </div>
-                </div>
-            </div>
-            <div class="lower-section">
-                <div class="author-preview">
-                    <img class="author-thumbnail" src="Thumbnail/Author/author-2.jpg">
-                </div>
-                <div class="video-details">
-                    <div class="video-title">
-                        Learn HTML - Full Tutorial for Beginners (2022)
-                    </div>
-                    <div class="video-author">
-                        freeCodeCamp.org &#10003;
-                    </div>
-                    <div class="video-stats">
-                        2.3M views &#183; 1 year ago
+                    <div class="video-details">
+                        <div class="video-title">
+                            Learn HTML - Full Tutorial for Beginners (2022)
+                        </div>
+                        <div class="video-author">
+                            freeCodeCamp.org &#10003;
+                        </div>
+                        <div class="video-stats">
+                            2.3M views &#183; 1 year ago
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="video-preview">
-            <div class="upper-section">
-                <div class="thumbnail-section">
-                    <img class="thumbnail" src="Thumbnail/VideoPreview/preview-3.webp">
-                    <div class="video-time">
-                        1:00
+            <div class="video-preview">
+                <div class="upper-section">
+                    <div class="thumbnail-section">
+                        <img class="thumbnail" src="Thumbnail/VideoPreview/preview-3.webp">
+                        <div class="video-time">
+                            1:00
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-section">
+                    <div class="author-preview">
+                        <img class="author-thumbnail" src="Thumbnail/Author/author-3.jpg">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">
+                            How to Learn Skills Faster | Huberman Lab Podcast
+                        </div>
+                        <div class="video-author">
+                            Andrew huberman &#10003;
+                        </div>
+                        <div class="video-stats">
+                            1.1M views &#183; 2 years ago
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="lower-section">
-                <div class="author-preview">
-                    <img class="author-thumbnail" src="Thumbnail/Author/author-3.jpg">
-                </div>
-                <div class="video-details">
-                    <div class="video-title">
-                        How to Learn Skills Faster | Huberman Lab Podcast
-                    </div>
-                    <div class="video-author">
-                        Andrew huberman &#10003;
-                    </div>
-                    <div class="video-stats">
-                        1.1M views &#183; 2 years ago
+            <div class="video-preview">
+                <div class="upper-section">
+                    <div class="thumbnail-section">
+                        <img class="thumbnail" src="Thumbnail/VideoPreview/preview-4.webp">
+                        <div class="video-time">
+                            1:00
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="upper-section">
-                <div class="thumbnail-section">
-                    <img class="thumbnail" src="Thumbnail/VideoPreview/preview-4.webp">
-                    <div class="video-time">
-                        1:00
+                <div class="lower-section">
+                    <div class="author-preview">
+                        <img class="author-thumbnail" src="Thumbnail/Author/author-4.jpg">
                     </div>
-                </div>
-            </div>
-            <div class="lower-section">
-                <div class="author-preview">
-                    <img class="author-thumbnail" src="Thumbnail/Author/author-4.jpg">
-                </div>
-                <div class="video-details">
-                    <div class="video-title">
-                        Kung Fu Panda | Who Are You
-                    </div>
-                    <div class="video-author">
-                        Khaled Osman
-                    </div>
-                    <div class="video-stats">
-                        17M views &#183; 3 years ago
+                    <div class="video-details">
+                        <div class="video-title">
+                            Kung Fu Panda | Who Are You
+                        </div>
+                        <div class="video-author">
+                            Khaled Osman
+                        </div>
+                        <div class="video-stats">
+                            17M views &#183; 3 years ago
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="video-preview">
-            <div class="upper-section">
-                <div class="thumbnail-section">
-                    <img class="thumbnail" src="Thumbnail/VideoPreview/preview-5.webp">
-                    <div class="video-time">
-                        1:00
+            <div class="video-preview">
+                <div class="upper-section">
+                    <div class="thumbnail-section">
+                        <img class="thumbnail" src="Thumbnail/VideoPreview/preview-5.webp">
+                        <div class="video-time">
+                            1:00
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-section">
+                    <div class="author-preview">
+                        <img class="author-thumbnail" src="Thumbnail/Author/author-5.jpg">
+                    </div>
+                    <div class="video-details">
+                        <div class="video-title">
+                            Best of Ben Böhmer
+                        </div>
+                        <div class="video-author">
+                            Cure Music
+                        </div>
+                        <div class="video-stats">
+                            2.5M views &#183; 1 year ago
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="lower-section">
-                <div class="author-preview">
-                    <img class="author-thumbnail" src="Thumbnail/Author/author-5.jpg">
-                </div>
-                <div class="video-details">
-                    <div class="video-title">
-                        Best of Ben Böhmer
-                    </div>
-                    <div class="video-author">
-                        Cure Music
-                    </div>
-                    <div class="video-stats">
-                        2.5M views &#183; 1 year ago
+            <div class="video-preview">
+                <div class="upper-section">
+                    <div class="thumbnail-section">
+                        <img class="thumbnail" src="Thumbnail/VideoPreview/preview-6.webp">
+                        <div class="video-time">
+                            1:00
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="upper-section">
-                <div class="thumbnail-section">
-                    <img class="thumbnail" src="Thumbnail/VideoPreview/preview-6.webp">
-                    <div class="video-time">
-                        1:00
+                <div class="lower-section">
+                    <div class="author-preview">
+                        <img class="author-thumbnail" src="Thumbnail/Author/author-2.jpg">
                     </div>
-                </div>
-            </div>
-            <div class="lower-section">
-                <div class="author-preview">
-                    <img class="author-thumbnail" src="Thumbnail/Author/author-2.jpg">
-                </div>
-                <div class="video-details">
-                    <div class="video-title">
-                        Harvard CS50 (2023) - Full Computer Science University Course
-                    </div>
-                    <div class="video-author">
-                        freeCodeCamp.org &#10003;
-                    </div>
-                    <div class="video-stats">
-                        2.3M views &#183; 4 months ago
+                    <div class="video-details">
+                        <div class="video-title">
+                            Harvard CS50 (2023) - Full Computer Science University Course
+                        </div>
+                        <div class="video-author">
+                            freeCodeCamp.org &#10003;
+                        </div>
+                        <div class="video-stats">
+                            2.3M views &#183; 4 months ago
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 </html>
