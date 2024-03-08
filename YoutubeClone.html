@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Clone by Harsh</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>YouTube Clone</title>
 
     <link rel="stylesheet" href="Styles/video.css">
     <link rel="stylesheet" href="Styles/header.css">
     <link rel="stylesheet" href="Styles/general.css">
+    <link rel="stylesheet" href="Styles/side-bar.css">
 
 </head>
 
@@ -26,26 +23,66 @@
             <div>
                 <button class="search-button">
                     <img class="search-icon" src="Icons/search-menu.svg">
+                    <div class="tooltip">Search</div>
                 </button>
             </div>
             <div>
                 <button class="mic-button">
                     <img class="mic-icon" src="Icons/mic-icon.svg">
+                    <div class="tooltip">Search with your Voice</div>
                 </button>
             </div>
         
         </div>
         <div class="right-section">
-            <div><img class="create-icon" src="Icons/create-icon.svg"></div>
-            <div><img class="notification-icon" src="Icons/notification-icon.svg"></div>
+            <div class="create-button">
+                <img class="create-icon" src="Icons/create-icon.svg">
+                <div class="tooltip">Create</div>
+            </div>
+            <div class="notification-icon-div">
+                <img class="notification-icon" src="Icons/notification-icon.svg">
+                <div class="notification-count">5</div>
+                <div class="tooltip">Notification</div>
+            </div>
             <div><img class="main-author" src="Thumbnail/Author/main-author.jpg"></div>
             
         </div>      
     </div>
+    <div class="side-bar">
+        <div class="sidebar-link">
+            <img class="home-sidebar" src="Icons/home-sidebar.svg">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="explore-sidebar" src="Icons/explore-sidebar.svg">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="subscription-sidebar" src="Icons/subscription-sidebar.svg">
+            <div>Subsciptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="originals-sidebar" src="Icons/originals-sidebar.svg">
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="youtubemusic-sidebar" src="Icons/youtubemusic-sidebar.svg">
+            <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="library-sidebar" src="Icons/library-sidebar.svg">
+            <div>Library</div>
+        </div>
+    </div>
     <div class="video-grid">
         <div class="video-preview">
             <div class="upper-section">
-                <img class="thumbnail" src="Thumbnail/VideoPreview/preview-1.webp">
+                <div class="thumbnail-section">
+                    <img class="thumbnail" src="Thumbnail/VideoPreview/preview-1.webp">
+                    <div class="video-time">
+                        1:00
+                    </div>
+                </div>
             </div>
             <div class="lower-section">
                 <div class="author-preview">
@@ -66,7 +103,12 @@
         </div>
         <div class="video-preview">
             <div class="upper-section">
-                <img class="thumbnail" src="Thumbnail/VideoPreview/preview-2.webp">
+                <div class="thumbnail-section">
+                    <img class="thumbnail" src="Thumbnail/VideoPreview/preview-2.webp">
+                    <div class="video-time">
+                        1:00
+                    </div>
+                </div>
             </div>
             <div class="lower-section">
                 <div class="author-preview">
@@ -87,7 +129,12 @@
         </div>
         <div class="video-preview">
             <div class="upper-section">
-                <img class="thumbnail" src="Thumbnail/VideoPreview/preview-3.webp">
+                <div class="thumbnail-section">
+                    <img class="thumbnail" src="Thumbnail/VideoPreview/preview-3.webp">
+                    <div class="video-time">
+                        1:00
+                    </div>
+                </div>
             </div>
             <div class="lower-section">
                 <div class="author-preview">
@@ -108,7 +155,12 @@
         </div>
         <div class="video-preview">
             <div class="upper-section">
-                <img class="thumbnail" src="Thumbnail/VideoPreview/preview-4.webp">
+                <div class="thumbnail-section">
+                    <img class="thumbnail" src="Thumbnail/VideoPreview/preview-4.webp">
+                    <div class="video-time">
+                        1:00
+                    </div>
+                </div>
             </div>
             <div class="lower-section">
                 <div class="author-preview">
@@ -129,7 +181,12 @@
         </div>
         <div class="video-preview">
             <div class="upper-section">
-                <img class="thumbnail" src="Thumbnail/VideoPreview/preview-5.webp">
+                <div class="thumbnail-section">
+                    <img class="thumbnail" src="Thumbnail/VideoPreview/preview-5.webp">
+                    <div class="video-time">
+                        1:00
+                    </div>
+                </div>
             </div>
             <div class="lower-section">
                 <div class="author-preview">
@@ -150,7 +207,12 @@
         </div>
         <div class="video-preview">
             <div class="upper-section">
-                <img class="thumbnail" src="Thumbnail/VideoPreview/preview-6.webp">
+                <div class="thumbnail-section">
+                    <img class="thumbnail" src="Thumbnail/VideoPreview/preview-6.webp">
+                    <div class="video-time">
+                        1:00
+                    </div>
+                </div>
             </div>
             <div class="lower-section">
                 <div class="author-preview">
