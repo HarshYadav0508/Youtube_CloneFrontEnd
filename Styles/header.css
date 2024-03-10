@@ -21,7 +21,7 @@
     margin-right: 24px;
 }
 .youtube-logo {
-    min-width: 20px;
+    min-width: 5px;
     max-width: 120px;
     height: 50px;
 }
@@ -98,7 +98,6 @@
     align-items:center ;
     justify-content: space-between;
     width: 140px;
-    flex-shrink: 0;
     margin-right: 20px;
 }
 .create-icon {
@@ -126,4 +125,31 @@
 .main-author {
     height: 35px;
     border-radius: 30px;
+}
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: none;
+    }
+    .header {
+        height: 50px;
+    }
+    .youtube-logo {
+        width: 80px;
+        height: 20px;
+    }
+    .search-bar {
+        display: none;
+    }
+    .search-button {
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        font-size: 10px;
+        padding: 5px;
+        border: none;
+        box-shadow: none;
+    }
+    .right-section {
+        margin-right: 5px;
+    }
 }
